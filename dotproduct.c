@@ -6,6 +6,9 @@ int main() {
     
     printf("Enter 3 Components of 1st Vector");
     scanf("%d %d %d", &firstVector[0], &firstVector[1], &firstVector[2]);
-    
+
+    printf("Enter 3 Components of 2nd Vector");
+    scanf("%d %d %d", &secondVector[0], &secondVector[1], &secondVector[2]);
+
 
 }
