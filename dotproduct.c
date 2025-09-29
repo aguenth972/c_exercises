@@ -1,20 +1,19 @@
 // Calculate the Dot Product between two vectors
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
+int dp(int n, int *firstVector, int *secondVector) {
     int dotProduct = 0;
-    int firstVector[3], secondVector[3];
-    
-    printf("Enter 3 Components of 1st Vector: ");
-    scanf("%d %d %d", &firstVector[0], &firstVector[1], &firstVector[2]);
 
-    printf("Enter 3 Components of 2nd Vector: ");
-    scanf("%d %d %d", &secondVector[0], &secondVector[1], &secondVector[2]);
-
-    for (int i = 0; i<3; i++) {
+    for (int i = 0; i < n; i++) {
         dotProduct += firstVector[i] * secondVector[i];
     }
+    return dotProduct;
+}
 
-    printf("%d\n", dotProduct);
-
+void retreiveData(int n, int *vector) {
+    printf("Enter vector numbers: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &vector[i]);
+    }
 }
